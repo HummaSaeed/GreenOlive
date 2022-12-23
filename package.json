@@ -9,8 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "chat-box-widget": "^1.0.2",
     "next": "13.0.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next-share": "^0.19.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-player": "^2.11.0",
+    "react-social-icons": "^5.15.0",
+    "react-whatsapp": "^0.3.0"
   }
 }
