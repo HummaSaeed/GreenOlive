@@ -1,7 +1,20 @@
-import React from "react";
+import React,{useState} from "react";
 import styles from "../styles/Home.module.css";
-
+import { Rating } from 'react-simple-star-rating'
+import { FaRegCircle,FaCircle } from "react-icons/fa";
 const AboutDetail = ({ image }) => {
+  const [rating, setRating] = useState(0)
+
+  // Catch Rating value
+  const handleRating = (number) => {
+    setRating(number)
+
+   
+  }
+  // Optinal callback functions
+  const onPointerEnter = () => console.log('Enter')
+  const onPointerLeave = () => console.log('Leave')
+  const onPointerMove = ( value,  index) => console.log(value, index)
   return (
     <div>
       <div
@@ -156,14 +169,7 @@ const AboutDetail = ({ image }) => {
               Contact Information
             </p>
           </div>
-          <div
-            style={{
-              height: 1,
-              backgroundColor: "grey",
-              width: "100%",
-              marginLeft: 20,
-            }}
-          ></div>
+          <hr style={{ marginLeft: 20 }} />
           <div
             style={{
               display: "flex",
@@ -186,7 +192,146 @@ const AboutDetail = ({ image }) => {
             <p>+27-58-3032142</p>
             <p>mdrnoor@gmail.com</p>
           </div>
-          <img src="	https://book.nightsbridge.com/assets/images/icon/safe-stay-logo.png"/>
+          <div style={{ paddingLeft: 20 }}>
+            <p
+              style={{
+                fontFamily: "QuickSand",
+                fontSize: 22,
+                fontWeight: "800",
+              }}
+            >
+              Guest Reviews
+            </p>
+
+            <hr />
+            <div style={{ height: 400, overflow: "scroll" }}>
+              <div
+                style={{
+                  backgroundColor: "#e9e8e2",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "right",
+                  flexDirection: "row",
+                  paddingRight: 10,
+                }}
+              >
+                <p style={{ fontSize: 10, fontFamily: "QuickSand" }}>
+                  Traveler Reviews brought to you by
+                </p>
+                <img
+                  src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-23252-2.svg"
+                  style={{ height: 28, width: 130, marginLeft: 10 }}
+                />
+              </div>
+              <div
+                style={{ display: "flex", flexDirection: "row", marginTop: 4 }}
+              >
+                <img src="https://static.tacdn.com/img2/brand_refresh/ratings/traveler/4.5.svg" />
+                <p
+                  style={{
+                    fontSize: 12,
+                    fontFamily: "QuickSand",
+                    marginLeft: 5,
+                  }}
+                >
+                  56 Reviews
+                </p>
+              </div>
+              <p style={{ fontFamily: "QuickSand" }}>
+                Tripadvisor Traveler Rating:
+              </p>
+              <hr />
+              <div
+                style={{ display: "flex",height:25, flexDirection: "row", width: "100%" }}
+              >
+                <div style={{ width: "50%", paddingTop: 20 }}>
+                  <div style={{ display: "flex", flexDirection: "row",display:'flex',alignItems:'center' }}>
+                    <p style={{ width: "50%",fontFamily:'QuickSand' }}>Value</p>
+                    
+                    <Rating
+                      onClick={handleRating}
+                      onPointerEnter={onPointerEnter}
+                      onPointerLeave={onPointerLeave}
+                      onPointerMove={onPointerMove}
+                      size={15}
+                      fillColor="#00aa6c"
+                      emptyIcon={<FaRegCircle size={20} />}
+                      fillIcon={<FaCircle size={20} />}
+                      allowFraction={true}
+                    />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}></div>
+              </div>
+              <div
+                style={{ display: "flex",height:25, flexDirection: "row", width: "100%" }}
+              >
+                <div style={{ width: "50%", paddingTop: 20 }}>
+                  <div style={{ display: "flex", flexDirection: "row",display:'flex',alignItems:'center' }}>
+                    <p style={{ width: "50%",fontFamily:'QuickSand',fontWeight:'500' }}>Rooms</p>
+                    
+                    <Rating
+                      onClick={handleRating}
+                      onPointerEnter={onPointerEnter}
+                      onPointerLeave={onPointerLeave}
+                      onPointerMove={onPointerMove}
+                      size={15}
+                      fillColor="#00aa6c"
+                      emptyIcon={<FaRegCircle size={20} />}
+                      fillIcon={<FaCircle size={20} />}
+                      allowFraction={true}
+                    />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}></div>
+              </div>
+              <div
+                style={{ display: "flex",height:25, flexDirection: "row", width: "100%" }}
+              >
+                <div style={{ width: "50%", paddingTop: 20 }}>
+                  <div style={{ display: "flex", flexDirection: "row",display:'flex',alignItems:'center' }}>
+                    <p style={{ width: "50%",fontFamily:'QuickSand',fontWeight:'500'}}>Cleanliness</p>
+                    
+                    <Rating
+                      onClick={handleRating}
+                      onPointerEnter={onPointerEnter}
+                      onPointerLeave={onPointerLeave}
+                      onPointerMove={onPointerMove}
+                      size={15}
+                      fillColor="#00aa6c"
+                      emptyIcon={<FaRegCircle size={20} />}
+                      fillIcon={<FaCircle size={20} />}
+                      allowFraction={true}
+                    />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}></div>
+              </div>
+              <div
+                style={{ display: "flex",height:25, flexDirection: "row", width: "100%" }}
+              >
+                <div style={{ width: "50%", paddingTop: 20 }}>
+                  <div style={{ display: "flex", flexDirection: "row",display:'flex',alignItems:'center' }}>
+                    <p style={{ width: "50%",fontFamily:'QuickSand',fontWeight:'500' }}>Service</p>
+                    
+                    <Rating
+                      onClick={handleRating}
+                      onPointerEnter={onPointerEnter}
+                      onPointerLeave={onPointerLeave}
+                      onPointerMove={onPointerMove}
+                      size={15}
+                      fillColor="#00aa6c"
+                      emptyIcon={<FaRegCircle size={20} />}
+                      fillIcon={<FaCircle size={20} />}
+                      allowFraction={true}
+                    />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}></div>
+              </div>
+            </div>
+          </div>
+          <img src="	https://book.nightsbridge.com/assets/images/icon/safe-stay-logo.png" />
         </div>
       </div>
     </div>

@@ -1,9 +1,23 @@
-import React from "react";
+import React,{useEffect} from "react";
 import AboutDetail from "./AboutDetail";
 import RoomDetail from "./RoomDetail";
 import styles from "../styles/Home.module.css";
 
 const Book = () => {
+  useEffect(() => {
+    const url = "https://www.nightsbridge.com/bridge/api/5.0/availgrid";
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        const json = await response.json();
+        console.log(json);
+
+      } catch (error) {
+        console.log("error", error);
+      }
+    };
+    fetchData();
+  }, [])
   return (
     <div
       style={{
