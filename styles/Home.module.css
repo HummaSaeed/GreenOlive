@@ -4,6 +4,28 @@
   align-items: center;
   justify-content: center;
 }
+.inputfield{
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 400px;
+  margin:10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.modal90w {
+  width: 160vw;  /* Occupy the 90% of the screen width */
+  max-width: 150vw;
+} 
+.textarea{
+  height: 150px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.input:focus{
+  outline: none;
+}
 
 .main {
   min-height: 100vh;
@@ -53,11 +75,11 @@
   align-items:center;
   justify-content: center;
 }
+
 .footer {
   display: flex;
   background-color:rgb(246, 246, 246);
   flex: 1;
-  /* padding: 2rem 0; */
   border-top: 1px solid #ccc8c8;
   justify-content: center;
   align-items: center;

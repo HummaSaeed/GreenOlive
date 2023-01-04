@@ -261,7 +261,9 @@ const AboutDetail = ({ image }) => {
                     />
                   </div>
                 </div>
-                <div style={{ width: "50%" }}></div>
+                <div style={{ width: "50%" }}>
+                  
+                </div>
               </div>
               <div
                 style={{ display: "flex",height:25, flexDirection: "row", width: "100%" }}
@@ -283,7 +285,9 @@ const AboutDetail = ({ image }) => {
                     />
                   </div>
                 </div>
-                <div style={{ width: "50%" }}></div>
+                <div style={{ width: "50%" }}>
+
+                </div>
               </div>
               <div
                 style={{ display: "flex",height:25, flexDirection: "row", width: "100%" }}
