@@ -40,7 +40,7 @@ const ContactUs = () => {
             backgroundColor: "rgb(69, 90, 100)",
             borderRadius: 30,
             display:'flex',
-            // marginTop: 20,
+            
             alignItems: "center",
             justifyContent: "center",
             flexDirection:'row'
@@ -50,7 +50,7 @@ const ContactUs = () => {
           <WhatsappShareButton >
             <WhatsappIcon size={32} round />
           </WhatsappShareButton>
-          <p style={{fontFamily:'Quicksand',fontWeight:'600',marginLeft:10,fontSize:12,color:'white'}}>Message on Whatsapp</p>
+          <p style={{fontFamily:'Quicksand',fontWeight:'600',marginLeft:10,fontSize:12,color:'white',marginTop:10}}>Message on Whatsapp</p>
         </Link>
        
       </div>
