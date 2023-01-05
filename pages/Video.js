@@ -7,28 +7,12 @@ const Video = () => {
     <div style={{ height: 600, backgroundColor: "black" }}>
       <div style={{ display: "flex", width: "100%", alignItems: "center" }}>
         <hr
-          style={{
-            backgroundColor: "grey",
-            height: 2,
-            width: 500,
-          }}
+          className={styles.hr}
         />
-        <p
-          style={{
-            fontSize: 28,
-            fontFamily: "Quicksand",
-            fontWeight: "500",
-            color: "grey",
-          }}
-        >
+        <p className={styles.subtitle}>
           View Our Virtual Tour
         </p>
-        <hr
-          style={{
-            backgroundColor: "grey",
-            height: 2,
-            width: 500,
-          }}
+        <hr className={styles.hr}
         />
       </div>
       <div

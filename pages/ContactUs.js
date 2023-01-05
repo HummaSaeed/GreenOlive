@@ -8,7 +8,7 @@ const ContactUs = () => {
       <div style={{ display: "flex", width: "100%", alignItems: "center" }}>
         <hr className={styles.hr}
         />
-        <p className={styles.hrtext}>Contact Us</p>
+        <p style={{fontSize:12,fontFamily:'QuickSand'}}>Contact Us</p>
         <hr className={styles.hr}/>
       </div>
       <p style={{ textAlign: "center", fontFamily: "Quicksand",fontWeight:'600' }}>

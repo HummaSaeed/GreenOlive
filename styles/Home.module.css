@@ -96,6 +96,26 @@
 .modaldetail2{
   width:40%;
 }
+.modalbackground{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  height: 550px;
+  margin-top: 10px;
+}
+.bigimagestyle{
+  width: 650px;
+  height: 350px;
+}
+.imagestyle{
+  width: 180px;
+  height:100px;
+  margin-right: 10px;
+  transform-origin: center;
+}
+
 .mid {
   padding: 0;
   flex: 1;
@@ -127,6 +147,11 @@
   font-size: 28px;
   font-family: QuickSand;
   font-weight: 500;
+}
+.subtitle{
+  font-size: 34px;
+  font-weight: 500;
+  color:'grey'
 }
 .aboutustext {
   text-align: center;
@@ -250,6 +275,12 @@
     margin-top: 20px;
     font-size: 14px;
   }
+  .subtitle{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    color:'grey'
+  }
   .aboutustext {
     margin-left: 0px;
     margin-right: 0px;
@@ -286,8 +317,16 @@
   }
   .pricelist {
     margin-top: 420px;
-      height: 88rem;
-      
+      height: 88rem; 
+  }
+  .bigimagestyle{
+    width: 300px;
+    height: 120px;
+  }
+  .imagestyle{
+    width: 50px !important;
+    height:50px !important;
+    margin-right: 5px;
   }
   .modaldetail{
     display: flex;

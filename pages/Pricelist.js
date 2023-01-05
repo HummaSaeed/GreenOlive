@@ -34,7 +34,7 @@ const Pricelist = () => {
   const [phroomimage, setphroomimage] = useState(phimage1);
   const [exroomimage, setexroomimage] = useState(eximage1);
   const handleClose = () => setshowbudgetroom(false);
- 
+
   return (
     <>
       <Modal
@@ -44,52 +44,131 @@ const Pricelist = () => {
         onHide={handleClose}
         animation={false}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-            backgroundColor: "white",
-            height: 550,
-            overflowX:'scroll',
-            overflowY:'scroll',
-            marginTop:10
-          }}
-          
-        >
-          <div style={{display:'flex',justifyContent:"space-between",width:'100%',padding:10,alignItems:'center'}}>
-            <div><p style={{fontFamily:'QuickSand',fontSize:18,fontWeight:'700',paddingLeft:10}}>Premium Queen Suite</p></div>
-            <div><p style={{fontFamily:'QuickSand',fontSize:18,fontWeight:'700',paddingRight:10}} onClick={()=>setshowbudgetroom(false)}>Close x</p></div>
+        <div className={styles.modalbackground}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "100%",
+              padding: 10,
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 18,
+                  fontWeight: "700",
+                  paddingLeft: 10,
+                }}
+              >
+                Premium Queen Suite
+              </p>
+            </div>
+            <div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 18,
+                  fontWeight: "700",
+                  paddingRight: 10,
+                }}
+                onClick={() => setshowbudgetroom(false)}
+              >
+                Close x
+              </p>
+            </div>
           </div>
           <div className={styles.modaldetail}>
-            <div style={{width:'60%',paddingLeft:20}}>
-              <Image src={bigimage} style={{width:650,height:350}}/>
-              <div style={{display:"flex",flexDirection:'row',paddingTop:10}}>
-              <Image src={image} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setbigimage(image)}}/>
-              <Image src={image2} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setbigimage(image2)}}/>
-              <Image src={image3} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setbigimage(image3)}}/>
-              <Image src={image4} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setbigimage(image4)}}/>
+            <div style={{ width: "60%", paddingLeft: 20 }}>
+              <Image src={bigimage} className={styles.bigimagestyle} />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  paddingTop: 10,
+                }}
+              >
+                <Image
+                  src={image}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setbigimage(image);
+                  }}
+                />
+                <Image
+                  src={image2}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setbigimage(image2);
+                  }}
+                />
+                <Image
+                  src={image3}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setbigimage(image3);
+                  }}
+                />
+                <Image
+                  src={image4}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setbigimage(image4);
+                  }}
+                />
               </div>
             </div>
             <div className={styles.modaldetail2}>
-              <p style={{fontFamily:'QuickSand',fontSize:20,fontWeight:'700'}}>Room Description</p>
-              <p style={{fontFamily:'QuickSand'}}>Shower, Mini Bar, AC/Heater, Microwave, Kettle, TV.</p>
-              <p style={{fontFamily:'QuickSand',fontSize:20,fontWeight:'700',marginTop:30}}>Amenities</p>
-           <div style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
-             <ul>
-            <li style={{fontFamily:'QuickSand'}}>Wi-Fi</li>
-             <li style={{fontFamily:'QuickSand'}}>Non-smoking</li>
-             <li style={{fontFamily:'QuickSand'}}>Sitting area</li>
-             <li style={{fontFamily:'QuickSand'}}>Air conditioning</li></ul>
-             <ul style={{marginRight:10}}><li style={{fontFamily:'QuickSand'}}>Bathroom amenities</li>
-             <li style={{fontFamily:'QuickSand'}}>Shower only</li>
-             <li style={{fontFamily:'QuickSand'}}>Hairdryer</li>
-             <li style={{fontFamily:'QuickSand'}}>Coffee / tea facilities</li>
-             <li style={{fontFamily:'QuickSand'}}>Minibar</li></ul>
-           </div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 20,
+                  fontWeight: "700",
+                }}
+              >
+                Room Description
+              </p>
+              <p style={{ fontFamily: "QuickSand" }}>
+                Shower, Mini Bar, AC/Heater, Microwave, Kettle, TV.
+              </p>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 20,
+                  fontWeight: "700",
+                  marginTop: 30,
+                }}
+              >
+                Amenities
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <ul>
+                  <li style={{ fontFamily: "QuickSand" }}>Wi-Fi</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Non-smoking</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Sitting area</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Air conditioning</li>
+                </ul>
+                <ul style={{ marginRight: 10 }}>
+                  <li style={{ fontFamily: "QuickSand" }}>
+                    Bathroom amenities
+                  </li>
+                  <li style={{ fontFamily: "QuickSand" }}>Shower only</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Hairdryer</li>
+                  <li style={{ fontFamily: "QuickSand" }}>
+                    Coffee / tea facilities
+                  </li>
+                  <li style={{ fontFamily: "QuickSand" }}>Minibar</li>
+                </ul>
+              </div>
             </div>
-
           </div>
         </div>
       </Modal>
@@ -100,52 +179,131 @@ const Pricelist = () => {
         onHide={handleClose}
         animation={false}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-            backgroundColor: "white",
-            height: 550,
-            overflowY:'scroll',
-            overflowX:'scroll',
-            marginTop:10
-          }}
-          
-        >
-          <div style={{display:'flex',justifyContent:"space-between",width:'100%',padding:10,alignItems:'center'}}>
-            <div><p style={{fontFamily:'QuickSand',fontSize:18,fontWeight:'700',paddingLeft:10}}>Premium Queen Room</p></div>
-            <div><p style={{fontFamily:'QuickSand',fontSize:18,fontWeight:'700',paddingRight:10}} onClick={()=>setpremiumqueenroom(false)}>Close x</p></div>
+        <div className={styles.modalbackground}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "100%",
+              padding: 10,
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 18,
+                  fontWeight: "700",
+                  paddingLeft: 10,
+                }}
+              >
+                Premium Queen Room
+              </p>
+            </div>
+            <div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 18,
+                  fontWeight: "700",
+                  paddingRight: 10,
+                }}
+                onClick={() => setpremiumqueenroom(false)}
+              >
+                Close x
+              </p>
+            </div>
           </div>
           <div className={styles.modaldetail}>
-            <div style={{width:'60%',paddingLeft:20}}>
-              <Image src={pqbigimage} style={{width:650,height:350}}/>
-              <div style={{display:"flex",flexDirection:'row',paddingTop:10}}>
-              <Image src={pqimage1} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setpqbigimage(pqimage1)}}/>
-              <Image src={pqimage2} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setpqbigimage(pqimage2)}}/>
-              <Image src={pqimage3} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setpqbigimage(pqimage3)}}/>
-              <Image src={pqimage4} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setpqbigimage(pqimage4)}}/>
+            <div style={{ width: "60%", paddingLeft: 20 }}>
+              <Image src={pqbigimage} className={styles.bigimagestyle} />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  paddingTop: 10,
+                }}
+              >
+                <Image
+                  src={pqimage1}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setpqbigimage(pqimage1);
+                  }}
+                />
+                <Image
+                  src={pqimage2}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setpqbigimage(pqimage2);
+                  }}
+                />
+                <Image
+                  src={pqimage3}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setpqbigimage(pqimage3);
+                  }}
+                />
+                <Image
+                  src={pqimage4}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setpqbigimage(pqimage4);
+                  }}
+                />
               </div>
             </div>
             <div className={styles.modaldetail2}>
-              <p style={{fontFamily:'QuickSand',fontSize:20,fontWeight:'700'}}>Room Description</p>
-              <p style={{fontFamily:'QuickSand'}}>Shower, Mini Bar, AC/Heater, Microwave, Kettle, TV.</p>
-              <p style={{fontFamily:'QuickSand',fontSize:20,fontWeight:'700',marginTop:30}}>Amenities</p>
-           <div style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
-             <ul>
-            <li style={{fontFamily:'QuickSand'}}>Wi-Fi</li>
-             <li style={{fontFamily:'QuickSand'}}>Non-smoking</li>
-             <li style={{fontFamily:'QuickSand'}}>Sitting area</li>
-             <li style={{fontFamily:'QuickSand'}}>Air conditioning</li></ul>
-             <ul style={{marginRight:10}}><li style={{fontFamily:'QuickSand'}}>Bathroom amenities</li>
-             <li style={{fontFamily:'QuickSand'}}>Shower only</li>
-             <li style={{fontFamily:'QuickSand'}}>Hairdryer</li>
-             <li style={{fontFamily:'QuickSand'}}>Coffee / tea facilities</li>
-             <li style={{fontFamily:'QuickSand'}}>Minibar</li></ul>
-           </div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 20,
+                  fontWeight: "700",
+                }}
+              >
+                Room Description
+              </p>
+              <p style={{ fontFamily: "QuickSand" }}>
+                Shower, Mini Bar, AC/Heater, Microwave, Kettle, TV.
+              </p>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 20,
+                  fontWeight: "700",
+                  marginTop: 30,
+                }}
+              >
+                Amenities
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <ul>
+                  <li style={{ fontFamily: "QuickSand" }}>Wi-Fi</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Non-smoking</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Sitting area</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Air conditioning</li>
+                </ul>
+                <ul style={{ marginRight: 10 }}>
+                  <li style={{ fontFamily: "QuickSand" }}>
+                    Bathroom amenities
+                  </li>
+                  <li style={{ fontFamily: "QuickSand" }}>Shower only</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Hairdryer</li>
+                  <li style={{ fontFamily: "QuickSand" }}>
+                    Coffee / tea facilities
+                  </li>
+                  <li style={{ fontFamily: "QuickSand" }}>Minibar</li>
+                </ul>
+              </div>
             </div>
-
           </div>
         </div>
       </Modal>
@@ -156,50 +314,133 @@ const Pricelist = () => {
         onHide={handleClose}
         animation={false}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-            backgroundColor: "white",
-            height: 550,
-            overflowX:'scroll',
-            overflowY:'scroll',
-            marginTop:20
-          }}>
-          <div style={{display:'flex',justifyContent:"space-between",width:'100%',padding:10,alignItems:'center'}}>
-            <div><p style={{fontFamily:'QuickSand',fontSize:18,fontWeight:'700',paddingLeft:10}}>Premium Twin Room</p></div>
-            <div><p style={{fontFamily:'QuickSand',fontSize:18,fontWeight:'700',paddingRight:10}} onClick={()=>{settwinroom(false)}}>Close x</p></div>
+        <div className={styles.modalbackground}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "100%",
+              padding: 10,
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 18,
+                  fontWeight: "700",
+                  paddingLeft: 10,
+                }}
+              >
+                Premium Twin Room
+              </p>
+            </div>
+            <div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 18,
+                  fontWeight: "700",
+                  paddingRight: 10,
+                }}
+                onClick={() => {
+                  settwinroom(false);
+                }}
+              >
+                Close x
+              </p>
+            </div>
           </div>
           <div className={styles.modaldetail}>
-            <div style={{width:'60%',paddingLeft:20}}>
-              <Image src={ptroom} style={{width:650,height:350}}/>
-              <div style={{display:"flex",flexDirection:'row',paddingTop:10}}>
-              <Image src={twinimage1} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{ setptroom(twinimage1)}}/>
-              <Image src={twinimage2} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{ setptroom(twinimage2)}}/>
-              <Image src={twinimage3} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{ setptroom(twinimage3)}}/>
-              <Image src={twinimage1} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{ setptroom(twinimage1)}}/>
+            <div style={{ width: "60%", paddingLeft: 20 }}>
+              <Image src={ptroom} className={styles.bigimagestyle} />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  paddingTop: 10,
+                }}
+              >
+                <Image
+                  src={twinimage1}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setptroom(twinimage1);
+                  }}
+                />
+                <Image
+                  src={twinimage2}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setptroom(twinimage2);
+                  }}
+                />
+                <Image
+                  src={twinimage3}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setptroom(twinimage3);
+                  }}
+                />
+                <Image
+                  src={twinimage1}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setptroom(twinimage1);
+                  }}
+                />
               </div>
             </div>
-            <div className={styles.modaldetail}>
-              <p style={{fontFamily:'QuickSand',fontSize:20,fontWeight:'700'}}>Room Description</p>
-              <p style={{fontFamily:'QuickSand'}}>Shower, Mini Bar, AC/Heater, Microwave, Kettle, TV.</p>
-              <p style={{fontFamily:'QuickSand',fontSize:20,fontWeight:'700',marginTop:30}}>Amenities</p>
-           <div style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
-             <ul>
-            <li style={{fontFamily:'QuickSand'}}>Wi-Fi</li>
-             <li style={{fontFamily:'QuickSand'}}>Non-smoking</li>
-             <li style={{fontFamily:'QuickSand'}}>Sitting area</li>
-             <li style={{fontFamily:'QuickSand'}}>Air conditioning</li></ul>
-             <ul style={{marginRight:10}}><li style={{fontFamily:'QuickSand'}}>Bathroom amenities</li>
-             <li style={{fontFamily:'QuickSand'}}>Shower only</li>
-             <li style={{fontFamily:'QuickSand'}}>Hairdryer</li>
-             <li style={{fontFamily:'QuickSand'}}>Coffee / tea facilities</li>
-             <li style={{fontFamily:'QuickSand'}}>Minibar</li></ul>
-           </div>
+            <div className={styles.modaldetail2}>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 20,
+                  fontWeight: "700",
+                }}
+              >
+                Room Description
+              </p>
+              <p style={{ fontFamily: "QuickSand" }}>
+                Shower, Mini Bar, AC/Heater, Microwave, Kettle, TV.
+              </p>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 20,
+                  fontWeight: "700",
+                  marginTop: 30,
+                }}
+              >
+                Amenities
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <ul>
+                  <li style={{ fontFamily: "QuickSand" }}>Wi-Fi</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Non-smoking</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Sitting area</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Air conditioning</li>
+                </ul>
+                <ul style={{ marginRight: 10 }}>
+                  <li style={{ fontFamily: "QuickSand" }}>
+                    Bathroom amenities
+                  </li>
+                  <li style={{ fontFamily: "QuickSand" }}>Shower only</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Hairdryer</li>
+                  <li style={{ fontFamily: "QuickSand" }}>
+                    Coffee / tea facilities
+                  </li>
+                  <li style={{ fontFamily: "QuickSand" }}>Minibar</li>
+                </ul>
+              </div>
             </div>
-
           </div>
         </div>
       </Modal>
@@ -210,50 +451,133 @@ const Pricelist = () => {
         onHide={handleClose}
         animation={false}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-            backgroundColor: "white",
-            height: 550,
-            overflowX:'scroll'
-            
-          }} 
-        >
-          <div style={{display:'flex',justifyContent:"space-between",width:'100%',padding:10,alignItems:'center'}}>
-            <div><p style={{fontFamily:'QuickSand',fontSize:18,fontWeight:'700',paddingLeft:10}}>Premium Honeymoon Room</p></div>
-            <div><p style={{fontFamily:'QuickSand',fontSize:18,fontWeight:'700',paddingRight:10}} onClick={()=>{setphroom(false)}}>Close x</p></div>
+        <div className={styles.modalbackground}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "100%",
+              padding: 10,
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 18,
+                  fontWeight: "700",
+                  paddingLeft: 10,
+                }}
+              >
+                Premium Honeymoon Room
+              </p>
+            </div>
+            <div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 18,
+                  fontWeight: "700",
+                  paddingRight: 10,
+                }}
+                onClick={() => {
+                  setphroom(false);
+                }}
+              >
+                Close x
+              </p>
+            </div>
           </div>
           <div className={styles.modaldetail}>
-            <div style={{width:'60%',paddingLeft:20}}>
-              <Image src={phroomimage} style={{width:650,height:350}}/>
-              <div style={{display:"flex",flexDirection:'row',paddingTop:10}}>
-              <Image src={phimage1} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setphroomimage(phimage1)}}/>
-              <Image src={phimage2} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setphroomimage(phimage2)}}/>
-              <Image src={phimage3} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setphroomimage(phimage3)}}/>
-              <Image src={phimage4} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setphroomimage(phimage4)}}/>
+            <div style={{ width: "60%", paddingLeft: 20 }}>
+              <Image src={phroomimage} className={styles.bigimagestyle} />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  paddingTop: 10,
+                }}
+              >
+                <Image
+                  src={phimage1}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setphroomimage(phimage1);
+                  }}
+                />
+                <Image
+                  src={phimage2}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setphroomimage(phimage2);
+                  }}
+                />
+                <Image
+                  src={phimage3}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setphroomimage(phimage3);
+                  }}
+                />
+                <Image
+                  src={phimage4}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setphroomimage(phimage4);
+                  }}
+                />
               </div>
             </div>
             <div className={styles.modaldetail2}>
-              <p style={{fontFamily:'QuickSand',fontSize:20,fontWeight:'700'}}>Room Description</p>
-              <p style={{fontFamily:'QuickSand'}}>Shower, Mini Bar, AC/Heater, Microwave, Kettle, TV.</p>
-              <p style={{fontFamily:'QuickSand',fontSize:20,fontWeight:'700',marginTop:30}}>Amenities</p>
-           <div style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
-             <ul>
-            <li style={{fontFamily:'QuickSand'}}>Wi-Fi</li>
-             <li style={{fontFamily:'QuickSand'}}>Non-smoking</li>
-             <li style={{fontFamily:'QuickSand'}}>Sitting area</li>
-             <li style={{fontFamily:'QuickSand'}}>Air conditioning</li></ul>
-             <ul style={{marginRight:10}}><li style={{fontFamily:'QuickSand'}}>Bathroom amenities</li>
-             <li style={{fontFamily:'QuickSand'}}>Shower only</li>
-             <li style={{fontFamily:'QuickSand'}}>Hairdryer</li>
-             <li style={{fontFamily:'QuickSand'}}>Coffee / tea facilities</li>
-             <li style={{fontFamily:'QuickSand'}}>Minibar</li></ul>
-           </div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 20,
+                  fontWeight: "700",
+                }}
+              >
+                Room Description
+              </p>
+              <p style={{ fontFamily: "QuickSand" }}>
+                Shower, Mini Bar, AC/Heater, Microwave, Kettle, TV.
+              </p>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 20,
+                  fontWeight: "700",
+                  marginTop: 30,
+                }}
+              >
+                Amenities
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <ul>
+                  <li style={{ fontFamily: "QuickSand" }}>Wi-Fi</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Non-smoking</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Sitting area</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Air conditioning</li>
+                </ul>
+                <ul style={{ marginRight: 10 }}>
+                  <li style={{ fontFamily: "QuickSand" }}>
+                    Bathroom amenities
+                  </li>
+                  <li style={{ fontFamily: "QuickSand" }}>Shower only</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Hairdryer</li>
+                  <li style={{ fontFamily: "QuickSand" }}>
+                    Coffee / tea facilities
+                  </li>
+                  <li style={{ fontFamily: "QuickSand" }}>Minibar</li>
+                </ul>
+              </div>
             </div>
-
           </div>
         </div>
       </Modal>
@@ -264,54 +588,137 @@ const Pricelist = () => {
         onHide={handleClose}
         animation={false}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-            backgroundColor: "white",
-            height: 550,
-            overflowX:'scroll'
-            
-          }}
-        >
-          <div style={{display:'flex',justifyContent:"space-between",width:'100%',padding:10,alignItems:'center'}}>
-            <div><p style={{fontFamily:'QuickSand',fontSize:18,fontWeight:'700',paddingLeft:10}}>Executive Room</p></div>
-            <div><p style={{fontFamily:'QuickSand',fontSize:18,fontWeight:'700',paddingRight:10}} onClick={()=>{setexroom(false)}}>Close x</p></div>
+        <div className={styles.modalbackground}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "100%",
+              padding: 10,
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 18,
+                  fontWeight: "700",
+                  paddingLeft: 10,
+                }}
+              >
+                Executive Room
+              </p>
+            </div>
+            <div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 18,
+                  fontWeight: "700",
+                  paddingRight: 10,
+                }}
+                onClick={() => {
+                  setexroom(false);
+                }}
+              >
+                Close x
+              </p>
+            </div>
           </div>
           <div className={styles.modaldetail}>
-            <div  style={{width:'60%',paddingLeft:20}}>
-              <Image src={exroomimage} style={{width:650,height:350}}/>
-              <div style={{display:"flex",flexDirection:'row',paddingTop:10}}>
-              <Image src={eximage1} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{ setexroomimage(eximage1)}}/>
-              <Image src={eximage2} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setexroomimage(eximage2)}}/>
-              <Image src={eximage3} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setexroomimage(eximage3)}}/>
-              <Image src={eximage4} style={{width:180,height:100,marginRight:10,transformOrigin:'center'}} onClick={()=>{setexroomimage(eximage4)}}/>
+            <div style={{ width: "60%", paddingLeft: 20 }}>
+              <Image src={exroomimage} className={styles.bigimagestyle} />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  paddingTop: 10,
+                }}
+              >
+                <Image
+                  src={eximage1}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setexroomimage(eximage1);
+                  }}
+                />
+                <Image
+                  src={eximage2}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setexroomimage(eximage2);
+                  }}
+                />
+                <Image
+                  src={eximage3}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setexroomimage(eximage3);
+                  }}
+                />
+                <Image
+                  src={eximage4}
+                  className={styles.imagestyle}
+                  onClick={() => {
+                    setexroomimage(eximage4);
+                  }}
+                />
               </div>
             </div>
             <div className={styles.modaldetail2}>
-              <p style={{fontFamily:'QuickSand',fontSize:20,fontWeight:'700'}}>Room Description</p>
-              <p style={{fontFamily:'QuickSand'}}>Shower, Mini Bar, AC/Heater, Microwave, Kettle, TV.</p>
-              <p style={{fontFamily:'QuickSand',fontSize:20,fontWeight:'700',marginTop:30}}>Amenities</p>
-           <div style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
-             <ul>
-            <li style={{fontFamily:'QuickSand'}}>Wi-Fi</li>
-             <li style={{fontFamily:'QuickSand'}}>Non-smoking</li>
-             <li style={{fontFamily:'QuickSand'}}>Sitting area</li>
-             <li style={{fontFamily:'QuickSand'}}>Air conditioning</li></ul>
-             <ul style={{marginRight:10}}><li style={{fontFamily:'QuickSand'}}>Bathroom amenities</li>
-             <li style={{fontFamily:'QuickSand'}}>Shower only</li>
-             <li style={{fontFamily:'QuickSand'}}>Hairdryer</li>
-             <li style={{fontFamily:'QuickSand'}}>Coffee / tea facilities</li>
-             <li style={{fontFamily:'QuickSand'}}>Minibar</li></ul>
-           </div>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 20,
+                  fontWeight: "700",
+                }}
+              >
+                Room Description
+              </p>
+              <p style={{ fontFamily: "QuickSand" }}>
+                Shower, Mini Bar, AC/Heater, Microwave, Kettle, TV.
+              </p>
+              <p
+                style={{
+                  fontFamily: "QuickSand",
+                  fontSize: 20,
+                  fontWeight: "700",
+                  marginTop: 30,
+                }}
+              >
+                Amenities
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <ul>
+                  <li style={{ fontFamily: "QuickSand" }}>Wi-Fi</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Non-smoking</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Sitting area</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Air conditioning</li>
+                </ul>
+                <ul style={{ marginRight: 10 }}>
+                  <li style={{ fontFamily: "QuickSand" }}>
+                    Bathroom amenities
+                  </li>
+                  <li style={{ fontFamily: "QuickSand" }}>Shower only</li>
+                  <li style={{ fontFamily: "QuickSand" }}>Hairdryer</li>
+                  <li style={{ fontFamily: "QuickSand" }}>
+                    Coffee / tea facilities
+                  </li>
+                  <li style={{ fontFamily: "QuickSand" }}>Minibar</li>
+                </ul>
+              </div>
             </div>
-
           </div>
         </div>
       </Modal>
-      
+
       <div className={styles.pricelist}>
         <div
           style={{
@@ -321,17 +728,11 @@ const Pricelist = () => {
             justifyContent: "center",
           }}
         >
-          <hr className={styles.hr}
-          />
-          <p className={styles.hrtext}
-          >
-            Price List
-          </p>
-          <hr className={styles.hr}
-          />
+          <hr className={styles.hr} />
+          <p className={styles.hrtext}>Price List</p>
+          <hr className={styles.hr} />
         </div>
-        <div className={styles.roomcontent}
-        >
+        <div className={styles.roomcontent}>
           <div>
             <p
               style={{
@@ -348,8 +749,7 @@ const Pricelist = () => {
           </div>
         </div>
         <div className={styles.roomsubcontent}>
-          <div className={styles.roomdis}
-          >
+          <div className={styles.roomdis}>
             <p
               style={{ fontFamily: "Quicksand", fontSize: 20 }}
               onClick={() => {
@@ -360,15 +760,12 @@ const Pricelist = () => {
             </p>
             <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>450/night +</p>
           </div>
-          <p className={styles.roomdisp}
-          >
+          <p className={styles.roomdisp}>
             {" "}
             Two Single Beds, DSTV, Microwave, Mini Fridge, Elec. Kettle With
             Shared Bathroom
           </p>
-          <div
-           className={styles.roomdis}
-          >
+          <div className={styles.roomdis}>
             <p
               style={{ fontFamily: "Quicksand", fontSize: 20 }}
               onClick={() => {
@@ -379,16 +776,12 @@ const Pricelist = () => {
             </p>
             <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>650/night +</p>
           </div>
-          <p
-            className={styles.roomdisp}
-          >
+          <p className={styles.roomdisp}>
             {" "}
             Extra Length Custom Made Queen bed, DSTV, Mini Fridge, Microwave,
             Electric Kettle
           </p>
-          <div
-            className={styles.roomdis}
-          >
+          <div className={styles.roomdis}>
             <p
               style={{ fontFamily: "Quicksand", fontSize: 20 }}
               onClick={() => {
@@ -399,15 +792,11 @@ const Pricelist = () => {
             </p>
             <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>650/night +</p>
           </div>
-          <p
-           className={styles.roomdisp}
-          >
+          <p className={styles.roomdisp}>
             {" "}
             Two Single Beds, cable television and all other amenities
           </p>
-          <div
-            className={styles.roomdis}
-          >
+          <div className={styles.roomdis}>
             <p
               style={{ fontFamily: "Quicksand", fontSize: 20 }}
               onClick={() => {
@@ -418,14 +807,11 @@ const Pricelist = () => {
             </p>
             <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>800/night +</p>
           </div>
-          <p className={styles.roomdisp}
-          >
+          <p className={styles.roomdisp}>
             {" "}
             King Sized Bed, Rain Shower, Private Area, Free Standing Bath Tub
           </p>
-          <div
-            className={styles.roomdis}
-          >
+          <div className={styles.roomdis}>
             <p
               style={{ fontFamily: "Quicksand", fontSize: 20 }}
               onClick={() => {
@@ -438,14 +824,11 @@ const Pricelist = () => {
               1000/night +
             </p>
           </div>
-          <p className={styles.roomdisp}
-          >
+          <p className={styles.roomdisp}>
             {" "}
             King Sized Bed, Rain Shower, Private Area, Free Standing BathTub
           </p>
-          <div
-           className={styles.roomdis}
-          >
+          <div className={styles.roomdis}>
             <p
               style={{ fontFamily: "Quicksand", fontSize: 20 }}
               onClick={() => {
