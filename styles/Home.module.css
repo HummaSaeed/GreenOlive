@@ -1,91 +1,351 @@
-.container {
-  width:100wh;
-  height:100vh;
+.topline {
+  display: flex;
   align-items: center;
+  height: 30px;
+  width: 100%;
+  font-family: "Quicksand";
+  background-color: black;
+  padding-top: 10px;
   justify-content: center;
 }
-.inputfield{
-  border: 1px solid gray;
-  border-radius: 5px;
-  width: 400px;
-  margin:10px;
-  height: 50px;
+.subhead {
   display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: right;
+  background-color: #fafafa;
   align-items: center;
+  padding-right: 50px;
 }
-.modal90w {
-  width: 160vw;  /* Occupy the 90% of the screen width */
-  max-width: 150vw;
-} 
-.textarea{
-  height: 150px;
-  width: 400px;
-  padding: 10px;
-  border-radius: 5px;
+.subheadfont {
+  font-size: 20px;
+  margin-top: 10px;
 }
-.input:focus{
-  outline: none;
+.contactbtn {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  margin-left: 10px;
 }
 
-.main {
-  min-height: 100vh;
-  padding:  0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
+.contacttext {
+  color: white;
+  font-family: "QuickSand";
+  font-weight: 700;
+  font-size: 20px;
+}
+.fixedimg {
+  position: absolute;
+  margin-top: -10px;
+  z-index: 1000;
 }
 .topmain {
   min-height: 50vh;
-  padding:  0;
+  padding: 0;
   flex: 1;
   display: flex;
   width: 100%;
-  height:55rem;
-  background-image: url('https://img1.wsimg.com/isteam/ip/48270e8b-ca81-4ebf-956d-4676f84960e3/IMG_20200313_173129.jpg');
+  height: 55rem;
+  background-image: url("https://img1.wsimg.com/isteam/ip/48270e8b-ca81-4ebf-956d-4676f84960e3/IMG_20200313_173129.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .topmainsec {
   min-height: 50vh;
-  padding:  0;
+  padding: 0;
   flex: 1;
   display: flex;
   width: 100%;
-  height:55rem;
-  background-image: url('https://img1.wsimg.com/isteam/ip/48270e8b-ca81-4ebf-956d-4676f84960e3/IMG_20200406_112227.jpg');
+  height: 55rem;
+  background-image: url("https://img1.wsimg.com/isteam/ip/48270e8b-ca81-4ebf-956d-4676f84960e3/IMG_20200406_112227.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
 }
-.mid {
-  min-height: 50vh;
-  padding:  0;
-  flex: 1;
+.centercircle {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  margin-top: 18%;
+  border-radius: 250px;
+  background-color: black;
+  opacity: 0.7;
   display: flex;
-  width: 100%;
-  height:55rem;
-  background-image: url('https://img1.wsimg.com/isteam/ip/48270e8b-ca81-4ebf-956d-4676f84960e3/IMG_20200323_194850.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
+.centertext {
+  display: flex;
+  color: white;
+  font-size: 48px;
+  z-index: 1000;
+  text-align: center;
+}
 
+.mid {
+  padding: 0;
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 15rem;
+  background-image: url("https://img1.wsimg.com/isteam/ip/48270e8b-ca81-4ebf-956d-4676f84960e3/IMG_20200323_194850.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+.intermid {
+  display: flex;
+  flex-direction: row;
+}
+.intertext {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+.hr {
+  background-color: grey;
+  height: 2px;
+  width: 500px;
+}
+.hrtext {
+  font-size: 28px;
+  font-family: QuickSand;
+  font-weight: 500;
+}
+.aboutustext {
+  text-align: center;
+  font-family: QuickSand;
+  color: "black";
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.roomcontent {
+  display: flex;
+  flex-direction: row;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.roomsubcontent{
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.roomdis{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin:0px;
+}
+.content > div {
+  width: 50%;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.pricelist {
+  height: 53rem;
+  background-color: rgb(246, 246, 246);
+  padding: 3em;
+}
+.roomdisp{
+  font-family: QuickSand;
+  font-weight: 600;
+  font-size: 17px;
+  width:55%
+}
 .footer {
   display: flex;
-  background-color:rgb(246, 246, 246);
+  background-color: rgb(246, 246, 246);
   flex: 1;
   border-top: 1px solid #ccc8c8;
   justify-content: center;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
 }
-.map{
+@media (max-width: 600px) {
+  .topline {
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .subhead {
+    padding-right: 20px;
+    justify-content: right;
+  }
+  .subheadfont {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .contactbtn {
+    width: 100px;
+    padding-top: 15px;
+    height: 25px;
+  }
+  .contacttext {
+    color: white;
+    font-family: "QuickSand";
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .fixedimg {
+    margin-top: -10px;
+  }
+  .topimg {
+    width: 210px;
+    height: 150px;
+  }
+  .topmain {
+    height: 35rem;
+  }
+  .topmainsec {
+    height: 35rem;
+  }
+  .centercircle {
+    margin-top: 45%;
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+  }
+  .centertext {
+    font-size: 40px;
+  }
+  .intermid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .intertext {
+    font-size: 30px;
+  }
+  .hr {
+    margin-top: 20px;
+    width: 100px;
+  }
+  .hrtext {
+    margin-top: 20px;
+    font-size: 19px;
+  }
+  .aboutustext {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .roomcontent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .roomsubcontent{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .roomdis{
+    display: flex;
+    flex-direction: column;
+    margin:0px;
+  }
+  .roomdisp{
+    font-family: QuickSand;
+    font-weight: 600;
+    font-size: 17px;
+    width:100%
+  }
+  .content > div {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .pricelist {
+    margin-top: 300px;
+   
+      height: 83rem;
+      
+  }
+  .footer{
+    margin-top: 50px;
+  }
+}
+.container {
+  width: 100wh;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.inputfield {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 400px;
+  margin: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.modal90w {
+  width: 160vw; /* Occupy the 90% of the screen width */
+  max-width: 150vw;
+}
+.smallimg {
+  width: "180px";
+  height: "100px";
+  margin-right: "10px";
+  transform-origin: "center";
+}
+.modal {
+  /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.textarea {
+  height: 150px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.input:focus {
+  outline: none;
+}
+
+.main {
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.map {
   width: 200rem;
 }
 
@@ -123,20 +383,14 @@
   line-height: 1.5;
   font-size: 1.5rem;
 }
-.contactus{
-  height:33rem;
+.contactus {
+  height: 33rem;
   background-color: white;
   padding: 3em;
 }
-.pricelist{
-  height:63rem;
-  background-color: rgb(246, 246, 246);
-  padding: 3em;
-}
-.video{
-  
+
+.video {
   background-color: black;
- 
 }
 
 .code {

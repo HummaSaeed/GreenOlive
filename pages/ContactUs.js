@@ -6,21 +6,10 @@ const ContactUs = () => {
   return (
     <div className={styles.contactus}>
       <div style={{ display: "flex", width: "100%", alignItems: "center" }}>
-        <hr
-          style={{
-            backgroundColor: "grey",
-            height: 2,
-            width: 500,
-          }}
+        <hr className={styles.hr}
         />
-        <p style={{ fontSize: 28, fontFamily: "Quicksand",fontWeight:'500' }}>Contact Us</p>
-        <hr
-          style={{
-            backgroundColor: "grey",
-            height: 2,
-            width: 500,
-          }}
-        />
+        <p className={styles.hrtext}>Contact Us</p>
+        <hr className={styles.hr}/>
       </div>
       <p style={{ textAlign: "center", fontFamily: "Quicksand",fontWeight:'600' }}>
         Ready to book with us? Have a question about our rooms or services?
@@ -45,12 +34,12 @@ const ContactUs = () => {
             justifyContent: "center",
             flexDirection:'row'
           }}
-          href="whatsapp://send?text=Hello World!&phone=+923460537421"
+          href="whatsapp://send?text=Hello World!&phone=+27789961600"
         >
           <WhatsappShareButton >
             <WhatsappIcon size={32} round />
           </WhatsappShareButton>
-          <p style={{fontFamily:'Quicksand',fontWeight:'600',marginLeft:10,fontSize:12,color:'white',marginTop:10}}>Message on Whatsapp</p>
+          <p style={{fontFamily:'Quicksand',fontWeight:'600',marginLeft:8,fontSize:12,color:'white',marginTop:13}}>Message on Whatsapp</p>
         </Link>
        
       </div>
