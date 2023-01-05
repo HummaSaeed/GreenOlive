@@ -87,7 +87,15 @@
   z-index: 1000;
   text-align: center;
 }
-
+.modaldetail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.modaldetail2{
+  width:40%;
+}
 .mid {
   padding: 0;
   flex: 1;
@@ -240,7 +248,7 @@
   }
   .hrtext {
     margin-top: 20px;
-    font-size: 19px;
+    font-size: 14px;
   }
   .aboutustext {
     margin-left: 0px;
@@ -277,10 +285,18 @@
     padding-left: 0px;
   }
   .pricelist {
-    margin-top: 300px;
-   
-      height: 83rem;
+    margin-top: 420px;
+      height: 88rem;
       
+  }
+  .modaldetail{
+    display: flex;
+    flex-direction: column;
+  }
+  .modaldetail2{
+    width: 100%;
+    padding-left: 20px;
+    
   }
   .footer{
     margin-top: 50px;
