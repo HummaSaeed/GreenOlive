@@ -8,7 +8,7 @@ const ContactUs = () => {
       <div style={{ display: "flex", width: "100%", alignItems: "center" }}>
         <hr className={styles.hr}
         />
-        <p style={{fontSize:12,fontFamily:'QuickSand'}}>Contact Us</p>
+        <p style={{fontSize:12,fontFamily:'QuickSand',marginTop:20}}>Contact Us</p>
         <hr className={styles.hr}/>
       </div>
       <p style={{ textAlign: "center", fontFamily: "Quicksand",fontWeight:'600' }}>
@@ -29,10 +29,10 @@ const ContactUs = () => {
             backgroundColor: "rgb(69, 90, 100)",
             borderRadius: 30,
             display:'flex',
-            
             alignItems: "center",
             justifyContent: "center",
-            flexDirection:'row'
+            flexDirection:'row',
+            textDecoration:"none"
           }}
           href="whatsapp://send?text=Hello World!&phone=+27789961600"
         >
