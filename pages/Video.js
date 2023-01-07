@@ -4,8 +4,8 @@ import ReactPlayer from "react-player";
 
 const Video = () => {
   return (
-    <div style={{ height: 600, backgroundColor: "black" }}>
-      <div style={{ display: "flex", width: "100%", alignItems: "center" }}>
+    <>
+      <div style={{ display: "flex", width: "100%", alignItems: "center",height:150,justifyContent:'center',backgroundColor:'black' }}>
         <hr className={styles.hr} />
         <p className={styles.subtitle}>View Our Virtual Tour</p>
         <hr className={styles.hr} />
@@ -24,7 +24,7 @@ const Video = () => {
             clear: "both",
             display: "table",
             position: "relative",
-            marginTop: 110,
+            // marginTop: 110,
           }}
         >
           <iframe
@@ -50,7 +50,7 @@ const Video = () => {
           </h4>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

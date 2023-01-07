@@ -758,7 +758,7 @@ const Pricelist = () => {
             >
               BUDGET ROOM WITH SHARED BATHROOM
             </p>
-            <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>450/night +</p>
+            <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>600/night +</p>
           </div>
           <p className={styles.roomdisp}>
             {" "}
@@ -774,7 +774,7 @@ const Pricelist = () => {
             >
               Premium Queen Room
             </p>
-            <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>650/night +</p>
+            <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>700/night +</p>
           </div>
           <p className={styles.roomdisp}>
             {" "}
@@ -790,7 +790,7 @@ const Pricelist = () => {
             >
               Premium Twin Room
             </p>
-            <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>650/night +</p>
+            <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>700/night +</p>
           </div>
           <p className={styles.roomdisp}>
             {" "}
@@ -805,7 +805,7 @@ const Pricelist = () => {
             >
               Premium Honeymoon Room
             </p>
-            <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>800/night +</p>
+            <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>900/night +</p>
           </div>
           <p className={styles.roomdisp}>
             {" "}
@@ -821,7 +821,7 @@ const Pricelist = () => {
               Executive Room
             </p>
             <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>
-              1000/night +
+              1100/night +
             </p>
           </div>
           <p className={styles.roomdisp}>
@@ -838,7 +838,7 @@ const Pricelist = () => {
               Family Room
             </p>
             <p style={{ fontFamily: "Quicksand", fontSize: 20 }}>
-              1000/night +
+              900/night +
             </p>
           </div>
           <p className={styles.roomdisp}>

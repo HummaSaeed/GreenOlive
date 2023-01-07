@@ -65,7 +65,8 @@ export default function Home() {
           </p>
           <div
             style={{
-              paddingTop: 10,
+              paddingTop: 15,
+              marginTop:15,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -89,7 +90,7 @@ export default function Home() {
         <ContactUs />
         <footer className={styles.footer}>
         <iframe
-          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Univers6 Kroon Ave, Panorama, Bethlehem, 9701, South Africaity of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?q=6%20Kroon%20Ave,%20Bethlehem%20Free%20State%20South%20Africa&t=&z=13&ie=UTF8&iwloc=&output=embed"
           width={'99%'}
           height={300}
           allowFullScreen={true}

@@ -149,7 +149,7 @@
   font-weight: 500;
 }
 .subtitle{
-  font-size: 34px;
+  font-size: 35px;
   font-weight: 500;
   color:'grey'
 }
@@ -442,6 +442,9 @@
   height: 33rem;
   background-color: white;
   padding: 3em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .video {

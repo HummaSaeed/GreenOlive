@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 const AboutUs = () => {
   return (
     <div className={styles.contactus}>
-      <div style={{ display: "flex", width: "100%", alignItems: "center" }}>
+      <div style={{ display: "flex", width: "100%", alignItems: "center",justifyContent:'center' }}>
         <hr className={styles.hr}
         />
         <p className={styles.hrtext}>

@@ -5,10 +5,10 @@ import Link from 'next/link'
 const ContactUs = () => {
   return (
     <div className={styles.contactus}>
-      <div style={{ display: "flex", width: "100%", alignItems: "center" }}>
+      <div style={{ display: "flex", width: "100%", alignItems: "center",justifyContent:'center' }}>
         <hr className={styles.hr}
         />
-        <p style={{fontSize:12,fontFamily:'QuickSand',marginTop:20}}>Contact Us</p>
+        <p style={{fontSize:22,fontFamily:'QuickSand',marginTop:20,marginLeft:5,marginRight:5}}>Contact Us</p>
         <hr className={styles.hr}/>
       </div>
       <p style={{ textAlign: "center", fontFamily: "Quicksand",fontWeight:'600' }}>
