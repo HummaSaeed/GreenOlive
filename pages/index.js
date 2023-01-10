@@ -18,12 +18,7 @@ export default function Home() {
   const router = useRouter();
   return (
     <div className={styles.body}>
-      <div className={styles.topline}>
-        <p style={{ color: "white", fontSize: 16 }}>
-          Get 10% off this month at Olive Day Spa when you stay with us.
-        </p>
-      </div>
-
+    
       <div className={styles.subhead}>
         <p className={styles.subheadfont}>+27 58 303 2142</p>
         <div

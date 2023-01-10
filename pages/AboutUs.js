@@ -45,7 +45,7 @@ const AboutUs = () => {
           </p>
         </div>
         <div>
-          <h1 style={{fontFamily:'Quicksand',fontWeight:'300',textAlign:'center'}}>100% Satisfaction Guaranteed</h1>
+          <h1 style={{fontFamily:'Quicksand',fontWeight:'300',textAlign:'center',fontSize:38}}>100% Satisfaction Guaranteed</h1>
           <p style={{textAlign:'center',fontFamily:'Quicksand',fontWeight:'600',color:'grey'}}>
           Whether this is your first visit, or you have been a guest many times, we want your experience to be excellent. Our staff is always available to help with any questions or concerns you may have. 
           </p>
