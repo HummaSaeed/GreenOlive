@@ -73,6 +73,7 @@ const Pricelist = () => {
                   fontSize: 18,
                   fontWeight: "700",
                   paddingRight: 10,
+                  cursor:'pointer'
                 }}
                 onClick={() => setshowbudgetroom(false)}
               >
@@ -208,6 +209,7 @@ const Pricelist = () => {
                   fontSize: 18,
                   fontWeight: "700",
                   paddingRight: 10,
+                  cursor:'pointer'
                 }}
                 onClick={() => setpremiumqueenroom(false)}
               >
@@ -343,6 +345,7 @@ const Pricelist = () => {
                   fontSize: 18,
                   fontWeight: "700",
                   paddingRight: 10,
+                  cursor:'pointer'
                 }}
                 onClick={() => {
                   settwinroom(false);
@@ -480,6 +483,7 @@ const Pricelist = () => {
                   fontSize: 18,
                   fontWeight: "700",
                   paddingRight: 10,
+                  cursor:'pointer'
                 }}
                 onClick={() => {
                   setphroom(false);
@@ -617,6 +621,7 @@ const Pricelist = () => {
                   fontSize: 18,
                   fontWeight: "700",
                   paddingRight: 10,
+                  cursor:'pointer'
                 }}
                 onClick={() => {
                   setexroom(false);
@@ -751,7 +756,7 @@ const Pricelist = () => {
         <div className={styles.roomsubcontent}>
           <div className={styles.roomdis}>
             <p
-              style={{ fontFamily: "Quicksand", fontSize: 20 }}
+              style={{ fontFamily: "Quicksand", fontSize: 20,cursor:'pointer' }}
               onClick={() => {
                 setshowbudgetroom(true);
               }}
@@ -767,7 +772,7 @@ const Pricelist = () => {
           </p>
           <div className={styles.roomdis}>
             <p
-              style={{ fontFamily: "Quicksand", fontSize: 20 }}
+              style={{ fontFamily: "Quicksand", fontSize: 20,cursor:'pointer' }}
               onClick={() => {
                 setpremiumqueenroom(true);
               }}
@@ -783,7 +788,7 @@ const Pricelist = () => {
           </p>
           <div className={styles.roomdis}>
             <p
-              style={{ fontFamily: "Quicksand", fontSize: 20 }}
+              style={{ fontFamily: "Quicksand", fontSize: 20,cursor:'pointer' }}
               onClick={() => {
                 settwinroom(true);
               }}
@@ -798,7 +803,7 @@ const Pricelist = () => {
           </p>
           <div className={styles.roomdis}>
             <p
-              style={{ fontFamily: "Quicksand", fontSize: 20 }}
+              style={{ fontFamily: "Quicksand", fontSize: 20,cursor:'pointer' }}
               onClick={() => {
                 setphroom(true);
               }}
@@ -813,7 +818,7 @@ const Pricelist = () => {
           </p>
           <div className={styles.roomdis}>
             <p
-              style={{ fontFamily: "Quicksand", fontSize: 20 }}
+              style={{ fontFamily: "Quicksand", fontSize: 20, cursor:'pointer' }}
               onClick={() => {
                 setexroom(true);
               }}
@@ -830,7 +835,7 @@ const Pricelist = () => {
           </p>
           <div className={styles.roomdis}>
             <p
-              style={{ fontFamily: "Quicksand", fontSize: 20 }}
+              style={{ fontFamily: "Quicksand", fontSize: 20, cursor:'pointer' }}
               onClick={() => {
                 setexroom(true);
               }}

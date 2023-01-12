@@ -6,6 +6,7 @@ import AboutUs from "./AboutUs";
 import Pricelist from "./Pricelist";
 import Video from "./Video";
 import { useRouter } from "next/router";
+import Link from 'next/link'
 import Modal from "react-bootstrap/Modal";
 
 export default function Home() {
@@ -21,14 +22,12 @@ export default function Home() {
     
       <div className={styles.subhead}>
         <p className={styles.subheadfont}>+27 58 303 2142</p>
-        <div
+        <Link
           className={styles.contactbtn}
-          onClick={() => {
-            setshowModal(true);
-          }}
+          href="whatsapp://send?text=Hello World!&phone=+27789961600"
         >
           <p className={styles.contacttext}>Contact Us</p>
-        </div>
+        </Link>
       </div>
       <div className={styles.main}>
         <div className={styles.fixedimg}>
@@ -70,6 +69,7 @@ export default function Home() {
               height:55,
               backgroundColor: "grey",
               marginLeft: 20,
+              cursor:'pointer'
             }}
             onClick={() => {
               router.push("https://book.nightsbridge.com/22018");

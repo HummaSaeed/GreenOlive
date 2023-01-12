@@ -31,6 +31,8 @@
   align-items: center;
   padding-top: 10px;
   margin-left: 10px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .contacttext {
@@ -38,6 +40,7 @@
   font-family: "QuickSand";
   font-weight: 700;
   font-size: 20px;
+  
 }
 .fixedimg {
   position: absolute;
@@ -229,6 +232,7 @@
     width: 100px;
     padding-top: 15px;
     height: 25px;
+    cursor: pointer;
   }
   .contacttext {
     color: white;
